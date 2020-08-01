@@ -12,6 +12,7 @@ class EmailAddressParser
   
   def initialize(data)
     @@emails = data.split(", ")
+    @@email = data.split(" ")
   end
   
   def parse
