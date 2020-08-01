@@ -13,6 +13,7 @@ class EmailAddressParser
   def initialize(data)
     @@emails = data.split("[a-zA-Z\@\.]+")
     @@emails
+    binding.pry
   end
   
   def self.parse(data)
