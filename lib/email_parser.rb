@@ -12,8 +12,7 @@ class EmailAddressParser
   
   def initialize(data)
     @@emails = data.split(", ")
-    @@emails
-    #binding.pry
+    #@@emails
   end
   
   def parse
