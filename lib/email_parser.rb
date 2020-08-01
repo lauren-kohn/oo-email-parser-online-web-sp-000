@@ -3,8 +3,6 @@
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
 
-require 'pry'
-
 class EmailAddressParser
   attr_accessor :data
     # writes the getter and setter methods for data
