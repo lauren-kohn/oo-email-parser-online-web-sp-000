@@ -14,11 +14,12 @@ class EmailAddressParser
   
   def initialize(data)
     @@emails = data.split(/[,\s]+/)
-    # initializes a new instance of EmailAddressParser, takes in the data argument, splits the data by comma
+    # initializes a new instance of EmailAddressParser, takes in the data argument, splits the data by commas or whitespace, and stores it in the @@emails array
   end
   
   def parse
     @@emails.uniq
+    # eliminates any repeats within the array
   end
   
 end
