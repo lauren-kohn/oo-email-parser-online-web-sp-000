@@ -9,8 +9,7 @@ class EmailAddressParser
   @@emails = []
   
   def initialize(data)
-    #parser = self.new
-    #@@emails = data.split("[a-zA-Z\@\.]+")
+    @@emails = data.split("[a-zA-Z\@\.]+")
   end
   
   def self.parse(data)
