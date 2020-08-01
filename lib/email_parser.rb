@@ -16,7 +16,7 @@ class EmailAddressParser
     #binding.pry
   end
   
-  def self.parse(data)
+  def parse(data)
     @@emails = email_addresses.split(", ")
     @@emails.uniq
   end
