@@ -12,11 +12,9 @@ class EmailAddressParser
   
   def initialize(data)
     @@emails = data.split(", ")
-    #@@emails
   end
   
   def parse
-    #@@emails = email_addresses.split(", ")
     @@emails.uniq
   end
   
