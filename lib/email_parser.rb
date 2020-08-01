@@ -19,5 +19,3 @@ class EmailAddressParser
   end
   
 end
-
-# [a-zA-Z\@\.]+
