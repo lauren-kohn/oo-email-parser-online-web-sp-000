@@ -13,9 +13,9 @@ class EmailAddressParser
     @@emails = data.split("[a-zA-Z\@\.]+")
   end
   
-  #def self.parse(email_addresses)
-    #@@emails = email_addresses.split("[a-zA-Z\@\.]+")
+  def parse(email_addresses)
+    @@emails = email_addresses.split("[a-zA-Z\@\.]+")
    # @@emails.uniq
-  #end
+  end
   
 end
