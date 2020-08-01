@@ -4,13 +4,13 @@
 # or whitespace (' ').
 
 class EmailAddressParser
-  attr_accessor :email_addresses
+  attr_accessor :data
   
   @@emails = []
   
   def initialize(data)
-    parser = self.new
-    @@emails = email_addresses.split("[a-zA-Z\@\.]+")
+    #parser = self.new
+    @@emails = data.split("[a-zA-Z\@\.]+")
   end
   
   def self.parse(email_addresses)
